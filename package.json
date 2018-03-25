@@ -1,0 +1,26 @@
+{
+  "name": "web2blob",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "./bin/web2blob.js",
+  "main": "./lib/api.js",
+  "scripts": {
+    "lint": "eslint bin lib",
+    "postinstall": "node checkVersion.js",
+    "start": "node ./bin/web2blob.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Guestline Ltd",
+  "license": "ISC",
+  "dependencies": {
+    "azure-storage": "2.8.1",
+    "bluebird": "3.5.1",
+    "commander": "2.15.1",
+    "mime-types": "2.1.18",
+    "recursive-readdir": "2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1"
+  }
+}
