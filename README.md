@@ -14,7 +14,17 @@ This application requires Node 4+ to run.
 
 ## Install
 
-Still not available in NPM. Coming soon!
+As a CLI tool
+
+```console
+npm install -g web2blob
+```
+
+As a library
+
+```console
+npm install --save-dev web2blob
+```
 
 ## CLI
 
