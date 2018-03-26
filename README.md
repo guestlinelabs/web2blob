@@ -2,6 +2,10 @@
 
 A small utility to upload your web assets to [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/). The idea is that after you build your website with tools like [Create React App](https://github.com/facebook/create-react-app), you could upload it to a blob, and then put a [CDN](https://azure.microsoft.com/en-us/services/cdn/) in front of it.
 
+## Requirements
+
+This application requires Node 4+ to run.
+
 ## What differences does it have with Azure CLI [upload-batch](https://docs.microsoft.com/en-us/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-upload-batch)?
 
 * Will infer the [Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type) for all your files.

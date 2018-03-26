@@ -1,13 +1,16 @@
-const MIN_VERSION = 4;
-const currentNodeVersion = process.versions.node;
-const major = currentNodeVersion.split('.')[0];
+var programName = require('./package.json').name;
+
+var MIN_VERSION = 4;
+var currentNodeVersion = process.versions.node;
+var major = currentNodeVersion.split('.')[0];
 
 if (major < MIN_VERSION) {
   console.error(
     'You are running Node ' +
       currentNodeVersion +
       '.\n' +
-      'This program requires Node ' +
+      programName +
+      ' requires Node ' +
       MIN_VERSION +
       ' or higher. \n' +
       'Please update your version of Node.'
