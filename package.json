@@ -1,18 +1,13 @@
 {
   "name": "web2blob",
   "version": "0.0.1",
-  "description": "",
+  "description":
+    "Upload all your web assets to Azure Blob Storage with a simple command!",
   "bin": "./bin/web2blob.js",
   "main": "./lib/api.js",
-  "scripts": {
-    "lint": "eslint bin lib",
-    "postinstall": "node checkVersion.js",
-    "start": "node ./bin/web2blob.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "lib": "lib"
   },
-  "keywords": [],
-  "author": "Guestline Ltd",
-  "license": "ISC",
   "dependencies": {
     "azure-storage": "2.8.1",
     "bluebird": "3.5.1",
@@ -22,5 +17,21 @@
   },
   "devDependencies": {
     "eslint": "4.19.1"
-  }
+  },
+  "scripts": {
+    "lint": "eslint bin lib",
+    "postinstall": "node checkVersion.js",
+    "start": "node ./bin/web2blob.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guestlinelabs/web2blob.git"
+  },
+  "author": "Guestline Ltd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guestlinelabs/web2blob/issues"
+  },
+  "homepage": "https://github.com/guestlinelabs/web2blob#readme"
 }
