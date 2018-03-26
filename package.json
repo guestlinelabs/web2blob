@@ -5,9 +5,6 @@
     "Upload all your web assets to Azure Blob Storage with a simple command!",
   "bin": "./bin/web2blob.js",
   "main": "./lib/api.js",
-  "directories": {
-    "lib": "lib"
-  },
   "dependencies": {
     "azure-storage": "2.8.1",
     "bluebird": "3.5.1",
