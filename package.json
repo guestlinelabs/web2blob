@@ -1,8 +1,7 @@
 {
   "name": "web2blob",
   "version": "0.0.1",
-  "description":
-    "Upload all your web assets to Azure Blob Storage with a simple command!",
+  "description": "Upload all your web assets to Azure Blob Storage with a simple command!",
   "bin": "./bin/web2blob.js",
   "main": "./lib/api.js",
   "dependencies": {
@@ -13,13 +12,14 @@
     "recursive-readdir": "2.2.2"
   },
   "devDependencies": {
-    "eslint": "4.19.1"
+    "eslint": "^4.19.1",
+    "jest": "^22.4.3"
   },
   "scripts": {
     "lint": "eslint bin lib",
     "postinstall": "node checkVersion.js",
     "start": "node ./bin/web2blob.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
