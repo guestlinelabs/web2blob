@@ -1,13 +1,8 @@
 {
   "name": "web2blob",
-<<<<<<< HEAD
   "version": "0.0.2",
   "description":
     "Upload all your web assets to Azure Blob Storage with a simple command!",
-=======
-  "version": "0.0.1",
-  "description": "Upload all your web assets to Azure Blob Storage with a simple command!",
->>>>>>> e2e351c208bf5f44c6d29ee8a432f8874bc47334
   "bin": "./bin/web2blob.js",
   "main": "./lib/api.js",
   "dependencies": {
