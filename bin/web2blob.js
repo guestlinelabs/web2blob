@@ -21,21 +21,31 @@ function exit(msg) {
 program
   .version(version)
   .usage('[options] --source --destination')
-  .option('-s, --source <source>', 'The directory where the files to be uploaded are located.')
-  .option('-d, --destination <destination>', 'The blob container where the files will be uploaded.')
+  .option(
+    '-s, --source <source>',
+    'The directory where the files to be uploaded are located.'
+  )
+  .option(
+    '-d, --destination <destination>',
+    'The blob container where the files will be uploaded.'
+  )
   .option('-Z, --no-zip', 'Disable gzip compression on the files.')
   .option(
     '-c, --cache <ms>',
-    'Set Cache-Control time in milliseconds (' + options.defaults.cache + ' by default).',
+    'Set Cache-Control time in milliseconds (' +
+      options.defaults.cache +
+      ' by default).',
     options.defaults.cache
   )
   .option(
-    '-s, --statics <folder>',
+    '-f, --statics <folder>',
     'Specify the folder where your static assets will be (static by default) so a cache of 1 year will be applied',
     options.defaults.statics
   )
   .option(
-    '-m, --max-connections <number> (defaults to ' + options.defaults.maxConnections + ')',
+    '-m, --max-connections <number> (defaults to ' +
+      options.defaults.maxConnections +
+      ')',
     'Number of concurrent connections to the blob',
     parseInt,
     options.defaults.maxConnections
