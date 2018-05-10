@@ -1,6 +1,6 @@
 {
   "name": "web2blob",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description":
     "Upload all your web assets to Azure Blob Storage with a simple command!",
   "bin": "./bin/web2blob.js",
@@ -17,7 +17,6 @@
   },
   "scripts": {
     "lint": "eslint bin lib",
-    "postinstall": "node checkVersion.js",
     "start": "node ./bin/web2blob.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
