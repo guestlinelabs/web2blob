@@ -1,7 +1,7 @@
 # web2blob
 
 [![npm version](https://img.shields.io/npm/v/web2blob.svg?style=flat-square)](https://www.npmjs.org/package/web2blob)
-[![build status](https://img.shields.io/travis/guestlinelabs/web2blob.svg?style=flat-square)](https://travis-ci.org/guestlinelabs/web2blob)
+[![Build Status](https://dev.azure.com/openguestlinelabs/Jabbascript/_apis/build/status/guestlinelabs.web2blob)](https://dev.azure.com/openguestlinelabs/Jabbascript/_build/latest?definitionId=1)
 [![npm downloads](https://img.shields.io/npm/dm/web2blob.svg?style=flat-square)](http://npm-stat.com/charts.html?package=web2blob)
 
 A small utility to upload your web assets to [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/). The idea is that after you build your website with tools like [Create React App](https://github.com/facebook/create-react-app), you could upload it to a blob, and then put a [CDN](https://azure.microsoft.com/en-us/services/cdn/) in front of it.
