@@ -1,19 +1,19 @@
 {
   "name": "web2blob",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Upload all your web assets to Azure Blob Storage with a simple command!",
   "bin": "./bin/web2blob.js",
   "main": "./lib/api.js",
   "dependencies": {
-    "azure-storage": "2.10.2",
-    "bluebird": "3.5.3",
-    "commander": "2.19.0",
-    "mime-types": "2.1.21",
+    "azure-storage": "2.10.3",
+    "bluebird": "3.5.5",
+    "commander": "2.20.0",
+    "mime-types": "2.1.24",
     "recursive-readdir": "2.2.2"
   },
   "devDependencies": {
-    "eslint": "5.9.0",
-    "jest": "23.6.0"
+    "eslint": "6.0.1",
+    "jest": "24.8.0"
   },
   "scripts": {
     "lint": "eslint bin lib",
